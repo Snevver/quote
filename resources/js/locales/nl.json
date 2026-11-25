@@ -1,0 +1,542 @@
+{
+    "menu": {
+        "projects": "[PROJECTEN]",
+        "about": "[OVER]",
+        "blog": "[BLOG]",
+        "contact": "[CONTACT]",
+        "skills": "[VAARDIGHEDEN]",
+        "quotes": "[QUOTES]",
+        "drawbook": "[TEKENBOEK]",
+        "mobile_menu": "[SYS.MENU]",
+        "logout": "[LOG_UIT]"
+    },
+    "common": {
+        "success": "Succes!",
+        "error": "Fout",
+        "add": "toevoegen",
+        "failed_to_save": "Opslaan mislukt.",
+        "interest_added": "Interesse succesvol toegevoegd.",
+        "interest_deleted": "Interesse succesvol verwijderd.",
+        "profile_updated": "Profiel succesvol bijgewerkt.",
+        "career_added": "Carrière-item succesvol toegevoegd.",
+        "career_updated": "Carrière succesvol geupdate.",
+        "career_deleted": "Carrière-item verwijderd.",
+        "confirm_delete": "Bevestig verwijderen",
+        "are_you_sure": "Weet je zeker dat je dit item wilt verwijderen?",
+        "deleted_successfully": "Succesvol verwijderd.",
+        "failed_to_delete": "Verwijderen mislukt.",
+        "message_sent": "Bericht succesvol verzonden!",
+        "exit_edit": "[SLUIT BEWERKEN]",
+        "edit": "Bewerken",
+        "save": "Opslaan",
+        "saving": "Opslaan...",
+        "cancel": "annuleren",
+        "close": "sluiten",
+        "loading": "Laden..."
+    },
+    "pages": {
+        "about": {
+            "title": "Over",
+            "edit_mode": "[BEWERK MODUS]",
+            "exit_edit": "[SLUIT BEWERKEN]",
+            "general_info": "algemene informatie",
+            "subtitle": "ondertitel",
+            "biography": "biografie",
+            "save_changes": "wijzigingen opslaan",
+            "saving": "Bezig met opslaan...",
+            "see_my_work": "bekijk mijn werk",
+            "name": "naam",
+            "no_bio": "Nog geen bio.",
+            "get_in_touch": "neem contact op",
+            "change_photo": "foto wijzigen",
+            "interests_skills": "interesses",
+            "career_history": "carrière",
+            "career": {
+                "add_entry": "+ carrière-item toevoegen",
+                "edit_entry": "carrière-item bewerken",
+                "title": "titel",
+                "description": "beschrijving",
+                "date_range": "datumbereik",
+                "currently_working": "momenteel werkzaam hier",
+                "cancel": "[ANNULEREN]",
+                "save": "[OPSLAAN]",
+                "edit": "[BEWERK]",
+                "delete": "[VERWIJDER]",
+                "present": "[HEDEN]",
+                "delete_confirm_title": "Carrière-item verwijderen",
+                "delete_confirm_message": "Weet je zeker dat je dit carrière-item wilt verwijderen?"
+            }
+        },
+        "index": {
+            "title": "Startpagina"
+        },
+        "interests": {
+            "add_interest": "+ interesse toevoegen",
+            "name": "naam",
+            "description": "beschrijving",
+            "save": "[OPSLAAN]",
+            "edit": "[BEWERK]",
+            "delete": "[VERWIJDER]",
+            "cancel": "[ANNULEREN]",
+            "delete_confirm_message": "Weet je zeker dat je deze interesse wilt verwijderen?",
+            "delete_confirm": "Interesse verwijderen"
+        },
+        "career": {
+            "add_entry": "+ carrière-item toevoegen",
+            "edit_entry": "carrière-item bewerken",
+            "title": "titel",
+            "description": "beschrijving",
+            "date_range": "datumbereik",
+            "currently_working": "momenteel werkzaam hier",
+            "cancel": "[ANNULEREN]",
+            "save": "[OPSLAAN]",
+            "edit": "[BEWERK]",
+            "delete": "[VERWIJDER]",
+            "present": "[HEDEN]",
+            "delete_confirm_title": "Carrière-item verwijderen",
+            "delete_confirm_message": "Weet je zeker dat je dit carrière-item wilt verwijderen?"
+        },
+        "projects": {
+            "title": "Projecten",
+            "status": "projecten-sectie in ontwikkeling...",
+            "add_project": "project initialiseren",
+            "loading": "projecten laden...",
+            "no_projects": "Nog geen projecten",
+            "syncing": "Datastromen synchroniseren...",
+            "categories": {
+                "apps": "Apps",
+                "games": "Games",
+                "websites": "Websites",
+                "other": "Overig"
+            },
+            "clusters": {
+                "apps": "[APPS]",
+                "games": "[GAMES]",
+                "websites": "[WEBSITES]",
+                "other": "[OVERIG]"
+            },
+            "types": {
+                "app": "APP (NATIEF/MOBIEL)",
+                "game": "GAME (SPEELBAAR/INTERACTIEF)",
+                "website": "WEBSITE (WEB_APP)",
+                "other": "OVERIG (UTILITY/BRONNEN)",
+                "app_label": "[APP_NATIEF]",
+                "game_label": "[GAME_BUILD]",
+                "website_label": "[WEB_INTERFACE]",
+                "other_label": "[BRON_DATA]",
+                "unknown": "[ONBEKEND]"
+            },
+            "management": {
+                "edit_mode": "[SYS.BEWERK_MODUS]",
+                "create_mode": "[SYS.AANMAAK_MODUS]",
+                "update_title": "Project bijwerken",
+                "create_title": "Project initialiseren",
+                "field_title": "Project titel",
+                "field_desc": "Technische beschrijving",
+                "field_class": "Classificatie",
+                "field_tags": "Technische tags",
+                "field_features": "Belangrijkste kenmerken",
+                "field_download": "Download interface (URL)",
+                "field_live": "Live toegang (URL)",
+                "field_repo": "Repository (GitHub bron)",
+                "field_imagery": "Project beeldmateriaal (Upload)",
+                "placeholder_title": "TITEL.EXE",
+                "placeholder_desc": "GEDETAILLEERD_MANIFEST...",
+                "placeholder_tags": "VUE, LARAVEL, THREEJS...",
+                "placeholder_features": "REACTIEVE_INTERFACE...",
+                "btn_deploy_images": "Beelden implementeren",
+                "btn_backward": "<< TERUG",
+                "btn_forward": "VERDER >>",
+                "btn_propagating": "PROPAGEREN...",
+                "btn_submit": "[PROJECT_INDIENEN]",
+                "btn_edit": "[BEWERK]",
+                "btn_delete": "[VERWIJDER]",
+                "btn_remove": "Verwijder [X]",
+                "btn_delete_x": "Verwijder [X]",
+                "tag_new": "NIEUW",
+                "confirm_delete": "SYSTEM_ALERT: Permanente verwijdering van kernproject [{title}] vereist?",
+                "delete_confirm_title": "Project verwijderen",
+                "delete_confirm_message": "Weet je zeker dat je dit project permanent wilt verwijderen?",
+                "no_media": "[GEEN_MEDIA]",
+                "no_data": "[GEEN_DATA]",
+                "report_label": "[PROJECT.RAPPORT]",
+                "capabilities": "Belangrijkste functies",
+                "btn_deploy_live": "Bekijk live website",
+                "btn_request_trans": "Download app",
+                "btn_download_game": "Download game",
+                "btn_access_source": "GitHub repository",
+                "markdown": {
+                    "write": "SCHRIJVEN",
+                    "preview": "VOORBEELD",
+                    "bold": "Vet",
+                    "italic": "Cursief",
+                    "link": "Link",
+                    "list": "Lijst",
+                    "quote": "Quote",
+                    "placeholder": "Voer technisch manifest in (Markdown ondersteund)..."
+                },
+                "error_manifest": "!!! SYSTEM_ERROR !!!"
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "status": "Contact-sectie in ontwikkeling...",
+            "heading": "Neem contact op",
+            "desc": "Stuur me een bericht via het formulier of voel je vrij om contact op te nemen via een van onderstaande platformen.",
+            "email": "E-mail",
+            "socials": "Sociale Media",
+            "direct_mail": "DIRECTE_MAIL",
+            "form_recipient": "FORMULIER_ONTVANGER",
+            "secure_channels": "[BEVEILIGDE_KANALEN]",
+            "null_registry": "[LEEG_REGISTER]",
+            "send_mail": "[VERSTUUR_MAIL]",
+            "open_link": "[OPEN_LINK]",
+            "form": {
+                "identity": "IDENTITEIT",
+                "identity_placeholder": "Jan Janssen",
+                "return_path": "ANTWOORD_ADRES",
+                "return_path_placeholder": "Jouw email",
+                "subject": "ONDERWERP",
+                "subject_placeholder": "Wow, hoe heb je zo'n mooie site gemaakt???",
+                "transmission": "TRANSMISSIE",
+                "transmission_placeholder": "Voer hier uw bericht in...",
+                "initiate": "START_TRANSMISSIE",
+                "sending": "VERZENDEN..."
+            }
+        },
+        "skills": {
+            "title": "Vaardigheden",
+            "status": "vaardigheden in ontwikkeling...",
+            "add_skill": "vaardigheid toevoegen",
+            "no_skills": "Nog geen vaardigheden in deze categorie.",
+            "cancel": "annuleren",
+            "save": "opslaan",
+            "proficiency": "vaardigheid",
+            "skill_added": "Vaardigheid succesvol toegevoegd.",
+            "name": "naam",
+            "level": {
+                "expert": "Expert",
+                "intermediate": "Gemiddeld",
+                "learning": "Aan het leren"
+            },
+            "delete_confirm_title": "Vaardigheid verwijderen",
+            "delete_confirm_message": "Weet je zeker dat je deze vaardigheid wilt verwijderen?",
+            "categories": {
+                "frontend": "Frontend",
+                "frontend_desc": "Client-side technologieën en frameworks",
+                "backend": "Backend",
+                "backend_desc": "Server-side technologieën en databases",
+                "other": "Overig",
+                "other_desc": "Tools, DevOps en diverse technologieën"
+            }
+        },
+        "quotes": {
+            "title": "Quotes",
+            "add_quote": "quote toevoegen",
+            "edit_quote": "quote bewerken",
+            "quote": "quote",
+            "quote_placeholder": "voer de quote in...",
+            "author": "auteur",
+            "author_placeholder": "naam van de auteur",
+            "tags": "tags",
+            "tags_placeholder": "inspiratie, motivatie, wijsheid",
+            "tags_hint": "scheid tags met komma's",
+            "note": "notitie (optioneel)",
+            "note_placeholder": "leg uit waarom dit quote je aanspreekt...",
+            "show_note": "zie notitie",
+            "hide_note": "notitie verbergen",
+            "filter_by_tag": "filter op tag",
+            "clear_filter": "filter wissen",
+            "no_quotes": "Nog geen quotes",
+            "no_quotes_tag": "Geen quotes met deze tag",
+            "quote_saved": "Quote succesvol opgeslagen!",
+            "quote_deleted": "Quote succesvol verwijderd!",
+            "delete_confirm_title": "Quote verwijderen",
+            "delete_confirm_message": "Weet je zeker dat je deze quote wilt verwijderen?"
+            ,
+            "new_folder_name": "Mapnaam",
+            "new_folder_placeholder": "Mapnaam...",
+            "create_folder": "Nieuwe map",
+            "folder_created": "Map gemaakt"
+        },
+        "not_found": {
+            "title": "[FOUT.404]",
+            "error_label": "FOUT:",
+            "status_messages": [
+                "RESOURCE_NIET_GEVONDEN",
+                "PAD_ONGELDIG",
+                "TOEGANG_GEWEIGERD",
+                "LOCATIE_ONBEKEND"
+            ],
+            "description": "De opgevraagde resource kon niet worden gevonden in de systeemdatabase. Dit kan komen door een ongeldig pad, beperkte toegang, of de resource kan zijn verplaatst of verwijderd.",
+            "return_home": "Terug naar home",
+            "status": "Status",
+            "code": "Code",
+            "protocol": "Protocol",
+            "timestamp": "Tijdstempel",
+            "error_status": "FOUT"
+        },
+        "gym_log": {
+            "title": "GYM.LOG",
+            "sidebar": {
+                "dashboard": "Dashboard",
+                "calendar": "Kalender",
+                "progress": "Voortgang",
+                "schemes": "Trainingsschema's",
+                "stats": "Statistieken",
+                "history": "Geschiedenis"
+            },
+            "dashboard": {
+                "total_workouts": "totaal trainingen",
+                "workouts_this_month": "deze maand",
+                "your_schemes": "jouw trainingsschema's",
+                "exercises": "oefeningen",
+                "no_schemes": "Nog geen trainingsschema's. Maak er een om te beginnen!",
+                "loading": "Laden..."
+            },
+            "calendar": {
+                "previous": "Vorige",
+                "next": "Volgende",
+                "today": "[Vandaag]",
+                "days": {
+                    "sun": "Zo",
+                    "mon": "Ma",
+                    "tue": "Di",
+                    "wed": "Wo",
+                    "thu": "Do",
+                    "fri": "Vr",
+                    "sat": "Za"
+                },
+                "months": {
+                    "0": "Januari",
+                    "1": "Februari",
+                    "2": "Maart",
+                    "3": "April",
+                    "4": "Mei",
+                    "5": "Juni",
+                    "6": "Juli",
+                    "7": "Augustus",
+                    "8": "September",
+                    "9": "Oktober",
+                    "10": "November",
+                    "11": "December"
+                }
+            },
+            "schemes": {
+                "title": "[TRAININGS.SCHEMA'S]",
+                "new_scheme": "+ nieuw schema",
+                "create_scheme": "trainingsschema aanmaken",
+                "scheme_name_placeholder": "bijv., Upper A, Lower B...",
+                "create": "aanmaken",
+                "cancel": "annuleren",
+                "save": "opslaan",
+                "delete": "verwijderen",
+                "add_exercise": "+ Oefening",
+                "new_exercise": "+ Nieuwe Oefening",
+                "create_exercise": "nieuwe oefening aanmaken",
+                "exercise_name_placeholder": "bijv., bankdrukken, squats...",
+                "starting_weight": "startgewicht",
+                "kg": "kg",
+                "no_schemes": "Nog geen trainingsschema's. Maak er een om te beginnen!",
+                "no_exercises": "Nog geen oefeningen in dit schema.",
+                "select_exercise": "oefening selecteren",
+                "remove_exercise": "verwijderen",
+                "confirm_delete_title": "Trainingsschema Verwijderen?",
+                "confirm_delete_scheme": "Weet je zeker dat je dit trainingsschema wilt verwijderen?"
+            },
+            "progress": {
+                "exercise": "Oefening",
+                "loading": "Voortgangsgegevens laden...",
+                "no_data": "Nog geen voortgangsgegevens. Gewicht snapshots worden automatisch vastgelegd op de 1e van elke maand.",
+                "info": "Gewicht snapshots worden automatisch vastgelegd op de 1e van elke maand met het commando: php artisan gym:capture-monthly-weights",
+                "confirm_delete_title": "Gewichtsinvoer Verwijderen?",
+                "confirm_delete": "Weet je zeker dat je deze gewichtsinvoer wilt verwijderen?"
+            }
+        },
+        "drawbook": {
+            "book_title": "Teken boek",
+            "canvas_title": "canvas",
+            "no_drawings": "Nog geen tekeningen. Wees de eerste om bij te dragen!",
+            "create_first": "Start met tekenen",
+            "background_color": "achtergrondkleur",
+            "color": "kleur",
+            "custom_color": "aangepaste kleur",
+            "tool": "gereedschap",
+            "brush": "penseel",
+            "eraser": "gum",
+            "blur": "vervagen",
+            "brush_size": "penseelgrootte",
+            "custom_thickness": "aangepaste dikte",
+            "layer": "laag",
+            "layers": "lagen",
+            "add_layer": "laag toevoegen",
+            "show_layer": "laag tonen",
+            "hide_layer": "laag verbergen",
+            "move_up": "omhoog",
+            "move_down": "omlaag",
+            "delete_layer": "laag verwijderen",
+            "save_color": "kleur opslaan",
+            "saved_colors": "opgeslagen kleuren",
+            "undo": "ongedaan maken",
+            "redo": "opnieuw",
+            "clear": "canvas wissen",
+            "submit": "indienen",
+            "submit_drawing": "dien je tekening in",
+            "your_name": "je naam (optioneel)",
+            "name_placeholder": "Anonieme kunstenaar",
+            "message": "voeg een bericht toe (optioneel)",
+            "message_placeholder": "vertel me over je tekening...",
+            "cancel": "annuleren",
+            "submit_success": "Tekening ingediend!",
+            "submit_success_message": "Bedankt voor je inzending! Je tekening wordt beoordeeld en kan binnenkort in het TekenBoek verschijnen.",
+            "draw_another": "Teken nog een",
+            "loading": "Laden...",
+            "drawing": "tekening",
+            "of": "van",
+            "previous": "vorige",
+            "next": "volgende",
+            "add_yours": "Teken zelf iets",
+            "anonymous": "Anonieme kunstenaar",
+            "anonymous_short": "Anoniem",
+            "submitting": "Indienen...",
+            "mobile_not_supported_title": "Alleen Desktop",
+            "mobile_not_supported_message": "Tekenen is alleen mogelijk op laptops en computers. Bezoek deze pagina op een groter apparaat om toegang te krijgen tot het tekencanvas."
+        }
+    },
+    "admin": {
+        "on": "AAN",
+        "off": "UIT",
+        "header": "SYSTEM.ADMIN",
+        "welcome": "Welkom terug, {name}",
+        "menu_visibility": {
+            "title": "Menu Zichtbaarheid",
+            "description": "menu zichtbaarheid wisselen"
+        },
+        "cards": {
+            "quotes": {
+                "title": "Quotes",
+                "description": "Beheer je quotes en wijsheid."
+            },
+            "gym_log": {
+                "title": "Gym log",
+                "description": "Volg je fitnessreis en trainingen."
+            },
+            "drawings": {
+                "title": "Tekeningen",
+                "description": "Beoordeel en beheer inzendingen voor tekeningen."
+            },
+            "content": {
+                "title": "Sitecontent",
+                "description": "Beheer skills, about, projecten, contact en blog."
+            },
+            "settings": {
+                "title": "App-instellingen",
+                "description": "Systeemstatus, mail, integraties en back-ups."
+            }
+        },
+        "drawings": {
+            "title": "wachtende tekeningen",
+            "admin": "DRAWINGS.ADMIN",
+            "pending": "in behandeling",
+            "all": "alle",
+            "tab_pending": "in behandeling",
+            "tab_approved": "goedgekeurd",
+            "tab_rejected": "afgewezen",
+            "tab_all": "alle tekeningen",
+            "loading": "tekeningen laden...",
+            "no_pending": "Alles bijgewerkt! Geen wachtende tekeningen om te beoordelen.",
+            "no_approved": "Nog geen goedgekeurde tekeningen.",
+            "no_rejected": "Geen afgewezen tekeningen.",
+            "no_drawings": "Nog geen tekeningen.",
+            "approved_count": "goedgekeurd",
+            "rejected_count": "afgewezen",
+            "approve": "goedkeuren",
+            "reject": "afwijzen",
+            "status_pending": "in behandeling",
+            "status_approved": "goedgekeurd",
+            "status_rejected": "afgewezen",
+            "confirm_delete_title": "Tekening verwijderen?",
+            "confirm_delete": "Weet je zeker dat je deze tekening permanent wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+        },
+        "content": {
+            "modules": {
+                "skills": {
+                    "title": "Skills",
+                    "status": "categorieën"
+                },
+                "about": {
+                    "title": "About",
+                    "status": "profiel & carrière"
+                },
+                "projects": {
+                    "title": "Projecten",
+                    "status": "portfolio"
+                },
+                "contact": {
+                    "title": "Contact",
+                    "status": "kanalen & e-mail"
+                },
+                "blog": {
+                    "title": "Blog",
+                    "status": "berichten"
+                }
+            }
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "post_title_placeholder": "POST TITEL",
+        "image_optional": "OPTIONEEL",
+        "image_recommended_size": "AANBEVOLEN AFMETING: 1200x600",
+        "post_content_placeholder": "SCHRIJF HIER JE BERICHT...",
+        "post_title_placeholder_nl": "POST TITEL (NL)",
+        "post_content_placeholder_nl": "SCHRIJF HIER JE BERICHT IN HET NEDERLANDS...",
+        "publishing": "PUBLICEREN...",
+        "publish": "PUBLICEREN",
+        "management": "Blog.Beheer",
+        "published": "GEPUBLICEERD",
+        "draft": "CONCEPT",
+        "min": "MIN",
+        "subtitle": "Gedachten, inzichten en technische verkenningen",
+        "read_more": "Lees meer",
+        "min_read": "MIN LEZEN",
+        "back_to_blog": "Terug naar Blog",
+        "no_posts": "Nog geen blogs.",
+        "create_post": "Bericht maken",
+        "edit_post": "bewerken",
+        "delete_post": "verwijderen",
+        "post_title": "Titel",
+        "post_content": "Inhoud",
+        "post_image": "Uitgelichte afbeelding",
+        "read_time": "Leestijd (minuten)",
+        "save_draft": "Opslaan als concept",
+        "post_created": "Blog bericht succesvol aangemaakt!",
+        "post_updated": "Blog bericht succesvol bijgewerkt!",
+        "post_deleted": "Blog bericht succesvol verwijderd!",
+        "confirm_delete": "Weet je zeker dat je dit blog bericht wilt verwijderen?"
+    },
+    "footer": {
+        "all_rights_reserved": "Alle rechten voorbehouden"
+    },
+    "components": {
+        "year_progress": {
+            "title": "Jaar voortgang",
+            "days": "dagen",
+            "day": "Dag"
+        }
+        ,
+        "world_statistics": {
+            "small_heading": "Live wereldstatistieken",
+            "title": "Aantal mensen",
+            "live": "LIVE",
+            "population_label": "Mensen die nu in leven zijn",
+            "population_aria": "Live wereldbevolking",
+            "based_on": "Gebaseerd op de live teller van Worldometer.",
+            "births_today": "Geboorten vandaag",
+            "deaths_today": "Overlijden vandaag",
+            "source": "Bron: {source}",
+            "load_error": "Kon de live statistieken nu niet verversen.",
+            "population_suffix": "mensen"
+        }
+    }
+}
