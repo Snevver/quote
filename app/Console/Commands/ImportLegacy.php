@@ -53,9 +53,8 @@ class ImportLegacy extends Command
                 return self::FAILURE;
             }
             if (! $legacy->getSchemaBuilder()->hasTable($table)) {
-                $this->error("Legacy table `{$table}` does not exist.");
-
-                return self::FAILURE;
+                $this->warn("Legacy table `{$table}` does not exist; skipping it (it stays empty here).");
+                unset($tables[$table]);
             }
         }
 
@@ -77,7 +76,7 @@ class ImportLegacy extends Command
                 $this->source($table, $filter)
                     ->select($columns)
                     ->orderBy($columns[0])
-                    ->chunk(500, function ($rows) use ($table) {
+                    ->chunk(100, function ($rows) use ($table) {
                         DB::table($table)->insert($rows->map(fn ($row) => (array) $row)->all());
                     });
             }
@@ -130,7 +129,7 @@ class ImportLegacy extends Command
         $hash = hash_init('sha256');
         $count = 0;
 
-        (clone $query)->select($columns)->orderBy($columns[0])->chunk(500, function ($rows) use ($hash, &$count) {
+        (clone $query)->select($columns)->orderBy($columns[0])->chunk(100, function ($rows) use ($hash, &$count) {
             foreach ($rows as $row) {
                 hash_update($hash, json_encode(array_map(fn ($v) => $v === null ? null : (string) $v, (array) $row)));
                 $count++;
