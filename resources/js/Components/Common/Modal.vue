@@ -59,13 +59,13 @@
         >
             <div
                 v-show="show"
-                class="fixed inset-y-0 right-0 lg:left-80 left-0 overflow-y-auto px-4 py-6 sm:px-0 flex items-start justify-center"
+                class="fixed inset-y-0 right-0 left-0 overflow-y-auto px-4 py-6 sm:px-0 flex items-start justify-center"
                 :style="{ zIndex: props.zIndex }"
             >
                 <!-- Overlay -->
                 <div
                     v-show="show"
-                    class="fixed inset-y-0 right-0 lg:left-80 left-0 transform transition-all"
+                    class="fixed inset-y-0 right-0 left-0 transform transition-all"
                     @click="close"
                 >
                     <div

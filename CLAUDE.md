@@ -13,18 +13,18 @@ composer test       # in-memory SQLite
 
 ## Routes (`routes/web.php`)
 
-- Auth: `/inchecken` (login page, password-only, IP whitelist in `settings.inchecken_ip_whitelist` suppresses the "login page visited" mail), `/inchecken/reset-password/*`, `POST /login`, `POST /logout`
+- Auth: `/inchecken` (login page, password-only, no notification mail), `/inchecken/reset-password/*`, `POST /login`, `POST /logout`
 - Everything else requires login; guests are redirected to `/inchecken`.
 - `/`: the Quotes page (folders + drag-and-drop ordering)
 - `/api/quotes`, `/api/quote-folders`: JSON API for the page (all behind login)
 
 ## Data
 
-Own MySQL database. Models: `Quote` (bilingual tags/notes, `folder_id`, `position`), `QuoteFolder` (nested via `parent_id`), `User`, `Setting`. `Setting` only holds the login IP whitelist; mail config comes from `.env`.
+Own MySQL database. Models: `Quote` (bilingual tags/notes, `folder_id`, `position`), `QuoteFolder` (nested via `parent_id`), `User`. Mail (password reset only) comes from `.env`.
 `php artisan app:import-legacy` is the one-time, read-only copy from the original snev.dev database (`legacy` connection, `LEGACY_DB_*`).
 
 ## Notes
 
 - Session cookie `quote_session`, `SESSION_DOMAIN` must stay empty (host-only) so login is separate from the other snev.dev apps.
-- Sidebar menu links to the portfolio via `resources/js/config/domains.js`.
+- Layout (`resources/js/Layouts/AppLayout.vue`) is a minimal header: page title slot, language switcher, logout. No links to the portfolio.
 - Bilingual UI strings live in `resources/js/locales/en.json` and `nl.json`.

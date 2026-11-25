@@ -28,4 +28,4 @@ php artisan app:import-legacy --dry-run   # shows row counts, changes nothing
 php artisan app:import-legacy             # copies + verifies (row count and content hash per table)
 ```
 
-It refuses to run if any target table already has rows. Tables: users, settings (IP whitelist only), quote_folders, quotes.
+It refuses to run if any target table already has rows. Tables: users, quote_folders, quotes. A table missing from the old database is skipped with a warning.

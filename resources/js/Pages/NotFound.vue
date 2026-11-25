@@ -2,7 +2,6 @@
 import AppLayout from "../Layouts/AppLayout.vue";
 import { ref, onMounted, computed } from "vue";
 import { useI18n } from "vue-i18n";
-import { portfolioUrl } from "../config/domains";
 
 const { t } = useI18n();
 
@@ -86,7 +85,7 @@ onMounted(() => {
                     <!-- Action Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a
-                            :href="portfolioUrl('/')"
+                            href="/"
                             class="group relative px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-mono text-xs uppercase tracking-[0.3em] transition-all overflow-hidden text-center"
                         >
                             <span

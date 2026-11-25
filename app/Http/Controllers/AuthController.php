@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
-use App\Mail\LoginPageVisited;
-use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Mail;
 
 class AuthController
 {
@@ -17,13 +14,7 @@ class AuthController
             return redirect('/');
         }
 
-        if (! in_array($request->ip(), Setting::getIpWhitelist(), true)) {
-            Mail::to(config('services.admin.email'))->send(
-                new LoginPageVisited($request->ip(), $request->userAgent())
-            );
-        }
-
-        return view('app', ['page' => 'Login', 'title' => 'Admin login']);
+        return view('app', ['page' => 'Login', 'title' => 'Login']);
     }
 
     public function login(LoginRequest $request)

@@ -28,7 +28,6 @@ class ImportLegacy extends Command
     {
         return [
             'users' => null,
-            'settings' => fn ($q) => $q->where('key', 'inchecken_ip_whitelist'),
             'quote_folders' => null,
             'quotes' => null,
         ];
